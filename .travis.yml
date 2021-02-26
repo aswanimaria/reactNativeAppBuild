@@ -1,0 +1,25 @@
+os: osx
+#- stage: Test and lint ✅
+#  language: node_js
+ # node_js: 8.5.0
+  #install: yarn
+  #script: npm run test:lint && npm run test:unit
+
+#- stage: Deploy iOS 🍏
+
+- stage: Build iOS 🍏
+  if: branch = master AND type = push
+  language: node_js
+  node_js: 14.16.0
+  osx_image: xcode12.4
+  before_install: bundle install
+  before_script:
+    - ./internals/scripts/travis/gitconfig.sh
+  install:
+  - bundle install
+script:
+  - bundle exec fastlane ios build
+
+  #install: yarn
+  #script: npm run deployment:ios
+

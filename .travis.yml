@@ -4,6 +4,10 @@ language: node_js
 node_js: 14.16.0
 #osx_image: xcode12.4
 os: osx
+before_install:
+- bundle install
+before_script:
+- bundle exec pod install
 install:
 - bundle install
 script:

@@ -32,7 +32,7 @@ local.properties
 
 # node.js
 #
-node_modules/
+#node_modules/
 npm-debug.log
 yarn-error.log
 
@@ -57,12 +57,10 @@ buck-out/
 *.jsbundle
 
 # CocoaPods
-/ios/Pods/
-/ios/Podfile
-/ios/Podfile.lock
-/ios/Pods_old/
-/ios/Podfile_old
-/ios/Podfile_old.lock
+#/ios/Pods/
+#/ios/Podfile
+#/ios/Podfile.lock
+
 # Expo
 .expo/*
 web-build/

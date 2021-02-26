@@ -9,6 +9,7 @@ before_install:
 - bundle install
 before_script:
 - gem install cocoapods
+- cd ./ios
 - bundle exec pod install
 install:
 - bundle install

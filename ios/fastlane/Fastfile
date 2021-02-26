@@ -10,20 +10,20 @@ desc 'Build the iOS application.'
 lane :build do
   
   #sh "pwd" 
-   Dir.chdir("..")
+  # Dir.chdir("..")
    sh "pwd" 
-  increment_build_number(xcodeproj: 'ios/aswanireactapp.xcodeproj')
+  increment_build_number(xcodeproj: './ios/aswanireactapp.xcodeproj')
 
-#  gym(scheme: 'aswanireactapp', project: 'ios/aswanireactapp.xcodeproj', configuration: "Debug", skip_codesigning: true)
+#  gym(scheme: 'aswanireactapp', project: './ios/aswanireactapp.xcodeproj', configuration: "Debug", skip_codesigning: true)
 gym(
-  #project: "ios/aswanireactapp.xcodeproj",
+  #project: "./ios/aswanireactapp.xcodeproj",
   configuration: "Debug",
   scheme: "aswanireactapp",
   skip_codesigning: true,
   skip_archive: true,
-  output_directory: "../build/output", 
+  output_directory: "./build/output", 
   output_name: "aswanireactapp.ipa", 
-  workspace: "ios/aswanireactapp.xcworkspace",
+  workspace: "./ios/aswanireactapp.xcworkspace",
   clean: true)
 
 end

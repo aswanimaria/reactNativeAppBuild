@@ -2,8 +2,8 @@ stages: Build iOS
 if: branch = master AND type = push
 language: node_js
 node_js: 14.16.0
-#osx_image: xcode12.4
-osx_image: xcode11.2
+osx_image: xcode12.2
+#osx_image: xcode11.2
 os: osx
 #before_install:
 #- bundle install

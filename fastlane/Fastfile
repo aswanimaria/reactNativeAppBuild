@@ -2,9 +2,9 @@ setup_travis
 
 fastlane_version '2.176.0'
 
-xcversion(version: "11.2")
+#xcversion(version: "11.2")
 
-xcode_select "/Applications/Xcode-11.app"
+#xcode_select "/Applications/Xcode-11.app"
 
 default_platform(:ios)
 

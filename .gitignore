@@ -58,9 +58,10 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
-/iOS/Pods_old
-#/ios/Podfile
-#/ios/Podfile.lock
+/iOS/Podfile_old.lock
+/iOS/Podfile.lock
+/ios/Podfile
+/ios/Podfile.lock
 
 # Expo
 .expo/*

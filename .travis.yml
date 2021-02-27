@@ -25,7 +25,9 @@ before_script:
 - gem install cocoapods
 - cd ./ios
 #- pod deintegrate
+- pod init
 - bundle exec pod install
+- cd ..
 #- pod init
 #- bundle exec pod update
 

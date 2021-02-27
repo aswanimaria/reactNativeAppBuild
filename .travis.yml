@@ -26,13 +26,17 @@ before_script:
 - gem install cocoapods
 - cd ./ios
 #- pod deintegrate
-- pod init
-- cat Podfile
-- echo "target 'aswanireactapp' do" >>Podfile
-- echo "use_unimodules!" >>Podfile
-- echo "config = use_native_modules!" >>Podfile
+#- pod init
+- touch Podfile
+- echo "require_relative '../node_modules/react-native/scripts/react_native_pods'" >>Podfile
+- echo "require_relative '../node_modules/react-native-unimodules/cocoapods.rb'" >>Podfile
+- echo "require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'" >>Podfile
 
-- echo "use_react_native!(:path => config[\"reactNativePath\"])" >>Podfile
+- echo "target 'aswanireactapp' do" >>Podfile
+- echo "  use_unimodules!" >>Podfile
+- echo "  config = use_native_modules!" >>Podfile
+
+- echo "  use_react_native!(:path => config[\"reactNativePath\"])" >>Podfile
 - echo "end" >>Podfile
 - cat Podfile
   

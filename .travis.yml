@@ -9,23 +9,20 @@ before_install:
 - gem install bundler
 - bundle install
 
-#- npm init
 before_script:
 - export NODE_BINARY=node
+
 #- gem install cocoapods
 #- cd ./ios
+#- pod deintegrate
+#- pod install
 #- pod init
 #- bundle exec pod update
-#- cd ..
+
 install:
-#- yarn install
+
 - bundle install
 script:
 - bundle exec fastlane ios build
-#install:
-#- yarn install
-#- bundle install
-#- yarn
-#script:
-#- npm run build:ios
+
 

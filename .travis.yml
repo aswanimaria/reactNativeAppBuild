@@ -6,6 +6,7 @@ osx_image: xcode12.2
 #osx_image: xcode11.2
 os: osx
 before_install:
+
 - bundle install
 #- npm init
 before_script:
@@ -19,7 +20,8 @@ before_script:
 #script:
 #- bundle exec fastlane ios build
 install:
-- yarn
+- bundle install
+#- yarn
 script:
 - npm run build:ios
 

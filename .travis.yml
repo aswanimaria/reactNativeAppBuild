@@ -5,16 +5,16 @@ node_js: 14.16.0
 osx_image: xcode12.2
 #osx_image: xcode11.2
 os: osx
-before_install:
+#before_install:
 
-- bundle install
+#- bundle install
 #- npm init
-before_script:
+#before_script:
 #- gem install cocoapods
-- cd ./ios
+#- cd ./ios
 #- pod init
-- bundle exec pod update
-- cd ..
+#- bundle exec pod update
+#- cd ..
 #install:
 #- bundle install
 #script:

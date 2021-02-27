@@ -21,7 +21,8 @@ before_install:
 
 before_script:
 - export NODE_BINARY=node
-
+- npm install expo-updates --save
+- npm install -g node-modules
 - gem install cocoapods
 - cd ./ios
 #- pod deintegrate

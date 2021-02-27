@@ -30,10 +30,10 @@ before_script:
 - cat Podfile
 - echo "target \'aswanireactapp\' do" >>Podfile
 - echo "use_unimodules!" >>Podfile
-- echo"config = use_native_modules!" >>Podfile
+- echo "config = use_native_modules!" >>Podfile
 
-- echo"use_react_native!(:path => config[\"reactNativePath\"])" >>Podfile
-- echo"end" >>Podfile
+- echo "use_react_native!(:path => config[\"reactNativePath\"])" >>Podfile
+- echo "end" >>Podfile
 - cat Podfile
   
 - bundle exec pod install

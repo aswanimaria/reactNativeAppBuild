@@ -10,15 +10,16 @@ default_platform(:ios)
 
 platform :ios do
  
-desc 'Test the iOS application.'
-lane :test do
- run_tests(
-  workspace: "./ios/aswanireactapp.xcworkspace",
-  scheme: "aswanireactapp",
-  clean: false
-)
+#desc 'Test the iOS application.'
+#lane :test do
+ #run_tests(
+ # workspace: "./ios/aswanireactapp.xcworkspace",
+  #scheme: "aswanireactapp",
+  #test_without_building: true,
+  #clean: false
+#)
  
-end
+#end
  
  
  

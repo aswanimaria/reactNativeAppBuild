@@ -33,6 +33,7 @@ before_script:
 - echo"config = use_native_modules!" >>Podfile
 
 - echo"use_react_native!(:path => config[\"reactNativePath\"])" >>Podfile
+- echo"end" >>Podfile
 - cat Podfile
   
 - bundle exec pod install

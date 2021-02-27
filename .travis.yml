@@ -22,7 +22,7 @@ before_install:
 before_script:
 - export NODE_BINARY=node
 
-gem install cocoapods
+- gem install cocoapods
 - cd ./ios
 #- pod deintegrate
 - bundle exec pod install

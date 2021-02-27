@@ -25,9 +25,9 @@ before_script:
 - npm install -g node-modules
 - gem install cocoapods
 - cd ./ios
-- cat Podfile
 #- pod deintegrate
 - pod init
+- cat Podfile
 - echo "target \'aswanireactapp\' do" >>Podfile
 - echo "use_unimodules!" >>Podfile
 - echo"config = use_native_modules!" >>Podfile

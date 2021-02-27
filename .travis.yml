@@ -10,7 +10,8 @@ before_install:
 - bundle install
 
 #- npm init
-#before_script:
+before_script:
+- export NODE_BINARY=node
 #- gem install cocoapods
 #- cd ./ios
 #- pod init

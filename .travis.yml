@@ -1,4 +1,4 @@
-stages: Build iOS
+stage: Build iOS
 if: branch = master AND type = push
 language: node_js
 node_js: 14.16.0

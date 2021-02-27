@@ -6,7 +6,6 @@
 #script:
 #- bundle exec fastlane ios test
 
-
 - stage: Build iOS
 if: branch = master AND type = push
 language: node_js
